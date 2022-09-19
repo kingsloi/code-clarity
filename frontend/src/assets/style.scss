@@ -1,0 +1,19 @@
+$enable-negative-margins: true;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+.blurred {
+    filter: blur(5px);
+}
+
+.magnet-connected {
+    &::before{
+        transform: rotate(0.25turn);
+    }
+}
+
+.json-viewer {
+    max-width: 500px;
+    white-space: break-spaces;
+}
