@@ -172,7 +172,7 @@
                   <div class="invalid-feedback d-block"
                     v-if="statement.totalCharges && statement.totalCharges !== statementTotalCharges"
                   >
-                    total charges mismatch! difference - {{ statement.totalCharges - statementTotalCharges }}
+                    total charges mismatch! difference = {{ (statement.totalCharges - statementTotalCharges).toFixed(2) }}
                   </div>
                 </div>
 
@@ -291,8 +291,8 @@
                 </tbody>
                 <tfoot>
                   <tr class="fw-bold">
-                    <td scope="col" colspan="5">Total Professional Charges:</td>
-                    <td scope="col" colspan="2">
+                    <td scope="col" colspan="4">Total Professional Charges:</td>
+                    <td scope="col" colspan="3">
                       <input type="number" class="form-control form-control-sm text-end" v-model="statement.totalCharges" :disabled="pageNumber > 1"
                         :class="{
                           'is-invalid': typeof(statement.totalCharges) !== 'undefined' && statement.totalCharges !== statementTotalCharges,
@@ -415,7 +415,7 @@
               <div class="invalid-feedback d-block text-end"
                 v-if="typeof(statement.totalBalance) !== 'undefined' && statementTotalBalance !== statement.totalBalance"
               >
-                total balance mismatch! difference - {{ statementTotalBalance - statement.totalBalance }}
+                total balance mismatch! difference = {{ (statementTotalBalance - statement.totalBalance).toFixed(2) }}
               </div>
             </div>
 
