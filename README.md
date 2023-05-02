@@ -1,4 +1,4 @@
-# Medical Kill Bill
+# Medical Bill Kill(er)
 
 ![app scrrenshot](screenshot.png?raw=true)
 
