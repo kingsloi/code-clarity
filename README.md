@@ -1,4 +1,4 @@
-# Medical Bill Kill(er)
+# Code Clarity
 
 ![app scrrenshot](screenshot.png?raw=true)
 
